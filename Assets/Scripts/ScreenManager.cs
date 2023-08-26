@@ -15,7 +15,8 @@ public class ScreenManager : MonoBehaviour
     {
         screenAnimator = GetComponent<Animator>();
 
-        room = 0;
+        room = 1;
+        rightArrow.SetActive(false);
         screenAnimator.SetInteger("room", room);
     }
 

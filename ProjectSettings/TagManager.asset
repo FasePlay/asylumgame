@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TagManager
   - DoodleManager
+  - Game
   layers:
   - Default
   - TransparentFX

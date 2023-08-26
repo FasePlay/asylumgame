@@ -36,7 +36,13 @@ public class DoodlesManager : MonoBehaviour
 
     public void SetEvidence()
     {
-        currentDoodle.isEvidence = isEvidenceCheckbox.isOn;
+        if (!currentDoodle.SetEvidence(isEvidenceCheckbox.isOn)) FailedToSetEvidence();
+    }
+
+    private void FailedToSetEvidence()
+    {
+        Debug.Log("Setting evidence wasn't possible! Probably too much evidences already or something");
+        isEvidenceCheckbox.isOn = false;
     }
 
     public void AnimateOut()
