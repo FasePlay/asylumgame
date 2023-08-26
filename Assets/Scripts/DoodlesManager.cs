@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine.UI;
 
 public class DoodlesManager : MonoBehaviour
@@ -9,27 +8,52 @@ public class DoodlesManager : MonoBehaviour
     [SerializeField] private TMP_InputField noteInput;
     [SerializeField] private Toggle isEvidenceCheckbox;
 
-    private Doodle _currentDoodle;
-    //TODO:
-    //tag manager
+    private Doodle currentDoodle;
+
+    private Animator animator;
+
+    private bool isOnScreen;
+
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        isOnScreen = false;
+    }
 
     public void ChangeDoodle(Doodle doodle)
     {
-        // AnimateOutro()
-        _currentDoodle = doodle;
-        noteInput.text = _currentDoodle.note;
-        isEvidenceCheckbox.isOn = _currentDoodle.isEvidence;
-        // Change Tags
-        // AnimateIntro()
+        if (!isOnScreen) AnimateIn();
+        currentDoodle = doodle;
+        noteInput.text = currentDoodle.note;
+        isEvidenceCheckbox.isOn = currentDoodle.isEvidence;
     }
 
     public void InputNote()
     {
-        _currentDoodle.note = noteInput.text;
+        currentDoodle.note = noteInput.text;
     }
 
     public void SetEvidence()
     {
-        _currentDoodle.isEvidence = isEvidenceCheckbox.isOn;
+        currentDoodle.isEvidence = isEvidenceCheckbox.isOn;
+    }
+
+    public void AnimateOut()
+    {
+        animator.SetTrigger("out");
+        isOnScreen = false;
+        currentDoodle = null;
+    }
+
+    public void AnimateIn()
+    {
+        animator.SetTrigger("in");
+        isOnScreen = true;
+    }
+
+    public bool IsOnScreen()
+    {
+        return isOnScreen;
     }
 }

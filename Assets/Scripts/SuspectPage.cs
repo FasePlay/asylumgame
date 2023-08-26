@@ -10,9 +10,12 @@ public class SuspectPage : MonoBehaviour
 
     [SerializeField] private Button changePagesButton;
 
+    private Animator animator;
+
     private void Start()
     {
         changePagesButton.onClick.AddListener(ChangePagesClick);
+        animator = GetComponent<Animator>();
     }
 
 
@@ -29,5 +32,15 @@ public class SuspectPage : MonoBehaviour
         currentPage.AnimateIn();
 
         (currentPage, hiddenPage) = (hiddenPage, currentPage);
+    }
+
+    public void AnimateIn()
+    {
+        animator.SetTrigger("in");
+    }
+
+    public void AnimateOut()
+    {
+        animator.SetTrigger("out");
     }
 }

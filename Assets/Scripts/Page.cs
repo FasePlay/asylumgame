@@ -3,7 +3,7 @@ using UnityEngine;
 
 class Page : MonoBehaviour
 {
-    [SerializeField] private Animator pageAnimator;
+    private Animator pageAnimator;
 
     private void Start()
     {

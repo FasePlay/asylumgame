@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Doodle : MonoBehaviour
 {
-    public List<Tag> tags = new List<Tag>();
+    // public List<Tag> tags = new List<Tag>();
     
     public string note;
     public bool isEvidence = false;
