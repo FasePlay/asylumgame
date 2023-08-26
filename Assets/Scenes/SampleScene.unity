@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 66
+  m_lineSpacing: 42
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1698,8 +1698,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.28, y: 0.6282}
-  m_SizeDelta: {x: 275.2961, y: 422.7435}
+  m_AnchoredPosition: {x: 163.9, y: -18.943914}
+  m_SizeDelta: {x: 275.2961, y: 343.4279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101435141
 MonoBehaviour:
@@ -1787,7 +1787,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: PUT DOWN YOUR WEAPONS AND SING WITH ME AHOYY AHOYY AHOYYYYY
+  m_Text: 'PUT DOWN YOUR WEAPONS AND '
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 16
+  m_LineLimit: 15
   m_InputValidator: {fileID: 0}
 --- !u!114 &101435142
 MonoBehaviour:
@@ -2776,7 +2776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   suspectName: Richard
-  note: 
+  cardNote: {fileID: 286253308}
+  notebookNote: {fileID: 1352421380}
 --- !u!1 &212144564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,8 +3601,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -143.3519, y: 0.6282}
-  m_SizeDelta: {x: 275.2961, y: 422.7435}
+  m_AnchoredPosition: {x: -170.04218, y: -22.7627}
+  m_SizeDelta: {x: 274.3805, y: 347.2982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237861489
 MonoBehaviour:
@@ -3689,7 +3690,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: Here I come! Oh dear
+  m_Text: 'DREAM '
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -3699,7 +3700,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 16
+  m_LineLimit: 14
   m_InputValidator: {fileID: 0}
 --- !u!114 &237861490
 MonoBehaviour:
@@ -4000,7 +4001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 229, y: 95}
+  m_AnchoredPosition: {x: 295, y: 136.4}
   m_SizeDelta: {x: 56.5547, y: 51.0681}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &281836934
@@ -4215,7 +4216,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 938369063}
+        m_TargetAssemblyTypeName: SuspectsManager, Assembly-CSharp
+        m_MethodName: ChangeNote
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4722,7 +4735,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   suspectName: Alice
-  note: 
+  cardNote: {fileID: 286253308}
+  notebookNote: {fileID: 1949076518}
 --- !u!114 &417766348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5938,7 +5952,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 66
+  m_lineSpacing: 40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -6079,7 +6093,7 @@ Transform:
   m_GameObject: {fileID: 550778991}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1000, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -8657,7 +8671,7 @@ GameObject:
   - component: {fileID: 842852631}
   - component: {fileID: 842852630}
   m_Layer: 5
-  m_Name: Input 4
+  m_Name: ThomasNotebook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8680,8 +8694,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.28, y: -113.84}
-  m_SizeDelta: {x: 275.2961, y: 193.81}
+  m_AnchoredPosition: {x: 163.4, y: -109.4}
+  m_SizeDelta: {x: 275.2961, y: 167.952}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842852630
 MonoBehaviour:
@@ -8762,7 +8776,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1162736340}
+        m_TargetAssemblyTypeName: Suspect, Assembly-CSharp
+        m_MethodName: ChangeNotebookNote
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9128,6 +9154,7 @@ RectTransform:
   m_Children:
   - {fileID: 1588996203}
   - {fileID: 746831968}
+  - {fileID: 1550848057}
   m_Father: {fileID: 85523906}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -9653,7 +9680,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 66
+  m_lineSpacing: 44
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -11954,7 +11981,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   suspectName: Thomas
-  note: 
+  cardNote: {fileID: 286253308}
+  notebookNote: {fileID: 842852630}
 --- !u!114 &1162736342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12961,7 +12989,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   suspectName: John
-  note: 
+  cardNote: {fileID: 286253308}
+  notebookNote: {fileID: 1454801318}
 --- !u!114 &1280750880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13837,7 +13866,7 @@ GameObject:
   - component: {fileID: 1352421381}
   - component: {fileID: 1352421380}
   m_Layer: 5
-  m_Name: Input 1
+  m_Name: Richard Notebook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13860,8 +13889,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -143.3519, y: 93.442}
-  m_SizeDelta: {x: 275.2961, y: 186.88}
+  m_AnchoredPosition: {x: -168.2, y: 65.3}
+  m_SizeDelta: {x: 275.2961, y: 164.0471}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1352421380
 MonoBehaviour:
@@ -13942,7 +13971,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 194495910}
+        m_TargetAssemblyTypeName: Suspect, Assembly-CSharp
+        m_MethodName: ChangeNotebookNote
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14999,8 +15040,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -1.7864075}
+  m_SizeDelta: {x: 0, y: -3.5729}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442612121
 MonoBehaviour:
@@ -15022,7 +15063,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Here I come! Oh dear\u200B"
+  m_text: "DREAM \u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15061,7 +15102,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 66
+  m_lineSpacing: 40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -15112,7 +15153,7 @@ GameObject:
   - component: {fileID: 1454801319}
   - component: {fileID: 1454801318}
   m_Layer: 5
-  m_Name: Input 2
+  m_Name: John Notebook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15135,8 +15176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -143.35, y: -108}
-  m_SizeDelta: {x: 275.2961, y: 182.1339}
+  m_AnchoredPosition: {x: -169, y: -111.4}
+  m_SizeDelta: {x: 275.2961, y: 173.2493}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1454801318
 MonoBehaviour:
@@ -15217,7 +15258,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1280750878}
+        m_TargetAssemblyTypeName: Suspect, Assembly-CSharp
+        m_MethodName: ChangeNotebookNote
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15445,7 +15498,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 66
+  m_lineSpacing: 44
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -15594,7 +15647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 229, y: 36}
+  m_AnchoredPosition: {x: 295, y: 78.8}
   m_SizeDelta: {x: 56.5547, y: 51.0681}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483854089
@@ -16659,6 +16712,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533578051}
   m_CullTransparentMesh: 1
+--- !u!1 &1550848056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1550848057}
+  - component: {fileID: 1550848060}
+  - component: {fileID: 1550848059}
+  - component: {fileID: 1550848058}
+  m_Layer: 5
+  m_Name: Return Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1550848057
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550848056}
+  m_LocalRotation: {x: -0, y: -0, z: -0.9727789, w: -0.231735}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 938369062}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -206.798}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -50, y: -88}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1550848058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550848056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1550848059}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 938369063}
+        m_TargetAssemblyTypeName: SuspectsManager, Assembly-CSharp
+        m_MethodName: HideManager
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1550848059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550848056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 56ca8c9199985982ca3176155c09736d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1550848060
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550848056}
+  m_CullTransparentMesh: 1
 --- !u!1 &1556603283
 GameObject:
   m_ObjectHideFlags: 0
@@ -17674,7 +17859,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "PUT DOWN YOUR WEAPONS AND SING WITH ME AHOYY AHOYY AHOYYYYY\u200B"
+  m_text: "PUT DOWN YOUR WEAPONS AND \u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17713,7 +17898,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 66
+  m_lineSpacing: 43
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -18582,7 +18767,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 914.6879, y: 774.8716}
+  m_SizeDelta: {x: 654.06, y: 420.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1746198634
 MonoBehaviour:
@@ -18604,7 +18789,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d07e38566260eb3a08ffb329fe8b1420, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 11f61384ef01ca3f5b55c55cd8c92326, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20449,7 +20634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0010147, y: -0.00053406}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 654.06, y: 420.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947329090
@@ -20472,7 +20657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1ecff4dbd0e81f30095df0079d184beb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 23e9ed3a1919d3d1a9ceaebefc4099e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20503,7 +20688,7 @@ GameObject:
   - component: {fileID: 1949076519}
   - component: {fileID: 1949076518}
   m_Layer: 5
-  m_Name: Input 3
+  m_Name: Alice Notebook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20526,7 +20711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.28, y: -11.93}
+  m_AnchoredPosition: {x: 164.5, y: -46.2}
   m_SizeDelta: {x: 275.3, y: 397.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1949076518
@@ -20608,7 +20793,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 417766346}
+        m_TargetAssemblyTypeName: Suspect, Assembly-CSharp
+        m_MethodName: ChangeNotebookNote
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []

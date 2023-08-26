@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,6 +28,24 @@ public class SuspectsManager : MonoBehaviour
         //showing the manager
         infoCardAnimator.SetInteger("suspect", suspects.IndexOf(currentSuspect));
         suspectsManagerAnimator.SetBool("showManager", true);
+        currentSuspect.SetNote();
+    }
+
+    public void HideManager()
+    {
+        Debug.Log("Hiding the manager!");
+        currentSuspect = null;
         
+        // hiding manager
+        suspectsManagerAnimator.SetBool("showManager", false);
+        
+        // showing suspects
+        suspectsAnimator.SetBool("isOut", false);
+        
+    }
+
+    public void ChangeNote()
+    {
+        if (currentSuspect is not null) currentSuspect.ChangeCardNote();
     }
 }
