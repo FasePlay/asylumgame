@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Doodle : MonoBehaviour
 {
@@ -10,9 +12,11 @@ public class Doodle : MonoBehaviour
     public bool isEvidence = false;
 
     [SerializeField] private DoodlesManager doodlesManager;
+    private Image border;
 
     public void Start()
     {
+        border = GetComponentInChildren<Image>();
         doodlesManager = GameObject.FindGameObjectWithTag("DoodleManager").GetComponent<DoodlesManager>();
         gameLogic = GameObject.FindWithTag("Game").GetComponent<GameLogic>();
     }
@@ -32,6 +36,17 @@ public class Doodle : MonoBehaviour
     public void SelectDoodle()
     {
         doodlesManager.ChangeDoodle(this);
+
+        StartCoroutine(ClickOnDoodleAnimation());
+        
+    }
+
+
+    private IEnumerator ClickOnDoodleAnimation()
+    {
+        border.color = new Color(255, 0, 0, 255);
+        yield return new WaitForSeconds(0.1f);
+        border.color = new Color(255, 255, 255, 255);
     }
 
     public bool SetEvidence(bool isOn)
