@@ -4,7 +4,7 @@ using UnityEngine;
 public class SuspectsManager : MonoBehaviour
 {
     [SerializeField] private List<Suspect> suspects = new List<Suspect>();
-    private Suspect currentSuspect;
+    public Suspect currentSuspect;
 
     private Animator suspectsManagerAnimator;
     [SerializeField] Animator suspectsAnimator;
